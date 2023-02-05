@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>色は？何色ゲーム</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                background-color: rgb(184, 207, 215);
+            }
+
+            .container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+
+            .inner {
+                max-width: 700px;
+                margin: 0 auto;
+                text-align: center;
+            }
+
+            #countDown,
+            #score,
+            #sample {
+                font-size: 20px;
+            }
+
+            #question {
+                font-size: 50px;
+            }
+
+            #choices button {
+                font-size: 30px;
+                margin: 20px;
+                background-color: rgb(184, 207, 215);
+                border: 2px solid black;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- <div><button onclick=" displayColor(), countDown()">ゲームスタート</button></div> -->
+        <div class="container">
+            <div class="inner">
+                <div id="countDown">残り3秒</div>
+                <div id="score">正解：0 不正解：0</div>
+                <div id="sample">(例)<span style="color: red">白</span>は「赤」が正解</div>
+                <div id="question"></div>
+                <div id="choices"></div>
+
+                <button onclick="location.href
+                ='index.html'">戻る</button>
+            </div>
+
+        </div>
+
+
+        <script src="js/main.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>色は？何色ゲーム</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                background-color: rgb(184, 207, 215);
+            }
+
+            h1,
+            p,
+            button {
+                margin: 8px;
+            }
+
+            .container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+
+            .inner {
+                width: 80%;
+                max-width: 700px;
+                margin: 0 auto;
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="inner">
+                <h1>色は？何色ゲーム</h1>
+                <p>出てくる文字の色を答えるゲームです。<br>例えば、<span style="color: red">白</span>と出てきたら「赤」が正解となります。</p>
+                <button onclick="location.href='game.html'">ゲームスタート</button>
+            </div>
+        </div>
+
+        <script src="js/main.js"></script>
+    </body>
+
+</html>
